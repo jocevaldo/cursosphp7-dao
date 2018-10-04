@@ -34,10 +34,25 @@ $usuario->login("admin","123");
 echo $usuario;
 */
 
-//inserir dadados na tabela
+/*
+//inserir dados na tabela
 $aluno = new Usuario("aluno","@lun0");
 $aluno->insert();
 echo $aluno;
+*/
+
+/*
+//updadte de um usuario
+$usuario = new Usuario();
+$usuario->loadByID(15);
+$usuario->update("Professor","7410258");
+echo $usuario;
+*/
+
+$usuario = new Usuario();
+$usuario->loadByID(10);
+$usuario->delete();
+echo $usuario;
 
  ?>
 
